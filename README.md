@@ -4,9 +4,7 @@ This project applies a Deep Dueling Double Q-Network (DDQN) to train an agent in
 
 ## Table of Contents
 - [Installation](#installation)
-- [Dependencies](#dependencies)
-- [Environment Setup](#environment-setup)
-- [Running the Model](#running-the-model)
+- [File Descriptions](#File-Descriptions)
 - [Saving and Loading the Model](#saving-and-loading-the-model)
 - [Acknowledgments](#acknowledgments)
 
