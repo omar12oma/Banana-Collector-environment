@@ -23,8 +23,25 @@ pip install matplotlib
 1. **-**: Notebook contains the data analysis
 
 
+## Saving and Loading the Model
 
+### Saving the Model
 
+After training your DDQN model, you can save the model's parameters using the following command:
+
+```python
+torch.save(online_network.state_dict(), 'ddqn_online_model.pth')
+torch.save(target_network.state_dict(), 'ddqn_target_model.pth')
+```
+
+### Loading the Model
+```python
+online_network = QNetwork(state_size, action_size).to(device)
+target_network = QNetwork(state_size, action_size).to(device)
+
+online_network.load_state_dict(torch.load('ddqn_online_model.pth'))
+target_network.load_state_dict(torch.load('ddqn_target_model.pth'))
+```
 
 ## Acknowledgements
 This project uses the Unity ML-Agents Toolkit and the Banana Collector environment provided by [Udacity](https://www.udacity.com/).
