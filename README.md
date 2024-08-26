@@ -12,7 +12,19 @@ This project implements a Deep Dueling Double Q-Network (DDQN) using the Unity B
 
 ## Installation
 
-### 1. Clone the Repository
-```bash
-git clone <repository-url>
-cd <repository-folder>
+```python
+pip install unityagents
+pip install torch
+pip install numpy
+pip install matplotlib
+```
+## File Descriptions
+
+1. **-**: Notebook contains the data analysis
+
+
+
+
+
+## Acknowledgements
+This project uses the Unity ML-Agents Toolkit and the Banana Collector environment provided by [Udacity](https://www.udacity.com/).
