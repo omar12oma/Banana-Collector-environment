@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-This report details the implementation of a Deep Q-Network (DQN) used for reinforcement learning. The focus is on the learning algorithm, hyperparameters, and neural network architectures employed.
+This report details the implementation of a Deep Q-Network (DQN) used for reinforcement learning.
 
 ## 2. Learning Algorithm
 
@@ -84,7 +84,7 @@ class ReplayBuffer:
         actions_tensor = torch.tensor(actions, dtype=torch.long).unsqueeze(1).to(device)
         return states_tensor, actions_tensor, rewards_tensor, next_states_tensor, dones_tensor
 ```
-### 4. Training Procedure
+## 4. Training Procedure
 
 The `DDQN` function orchestrates the training process. It initializes the optimizer, performs training over a specified number of episodes, and updates both the online and target networks.
 
@@ -140,3 +140,10 @@ def DDQN(n_episodes, batch_size=64, gamma=0.98, lr=5e-4, start=.8, end=.05, deca
     torch.save(target_network.state_dict(), 'ddqn_target_model.pth')
     return scores
 ```
+
+## 5. Idea for Future Work
+
+### Prioritized Experience Replay
+
+To enhance the learning efficiency, consider implementing **Prioritized Experience Replay (PER)**. Unlike uniform sampling, PER prioritizes experiences with higher temporal-difference (TD) errors, which are more informative. This approach can accelerate learning and improve policy performance.
+
