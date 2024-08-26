@@ -1,6 +1,6 @@
 # Banana-Collector-environment with Double DQN
 
-This project implements a Deep Dueling Double Q-Network (DDQN) using the Unity Banana Collector environment.
+This project applies a Deep Dueling Double Q-Network (DDQN) to train an agent in the Unity Banana Collector environment
 
 ## Table of Contents
 - [Installation](#installation)
@@ -20,7 +20,7 @@ pip install matplotlib
 ```
 ## File Descriptions
 
-1. **-**: Notebook contains the data analysis
+1. **Banana_Collector_agent.ipynb**: Notebook contains the implementation and training procedure for the Banana Collector agent using DDQN
 2. **ddqn_online_model.pth** This file contains the saved weights of the online network used in the Deep Q-Network (DDQN) implementation.
 3. **ddqn_target_model.pth** This file contains the saved weights of the target network in the DDQN framework.
 
