@@ -23,6 +23,8 @@ pip install matplotlib
 1. **Banana_Collector_agent.ipynb**: Notebook contains the implementation and training procedure for the Banana Collector agent using DDQN
 2. **ddqn_online_model.pth** This file contains the saved weights of the online network used in the Deep Q-Network (DDQN) implementation.
 3. **ddqn_target_model.pth** This file contains the saved weights of the target network in the DDQN framework.
+4. **Report.md** This file contains The project report
+
 
 
 
