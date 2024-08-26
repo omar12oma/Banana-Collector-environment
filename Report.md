@@ -140,8 +140,11 @@ def DDQN(n_episodes, batch_size=64, gamma=0.98, lr=5e-4, start=.8, end=.05, deca
     torch.save(target_network.state_dict(), 'ddqn_target_model.pth')
     return scores
 ```
+## 5. Plot of Rewards
+![rewards_plot](https://github.com/user-attachments/assets/6c21fa5e-0d80-492a-bf81-2a3307f2258a)
 
-## 5. Idea for Future Work
+
+## 6. Idea for Future Work
 
 ### Prioritized Experience Replay
 
