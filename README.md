@@ -21,6 +21,10 @@ pip install matplotlib
 ## File Descriptions
 
 1. **-**: Notebook contains the data analysis
+2. **ddqn_online_model.pth** This file contains the saved weights of the online network used in the Deep Q-Network (DDQN) implementation.
+3. **ddqn_target_model.pth** This file contains the saved weights of the target network in the DDQN framework.
+
+
 
 
 ## Saving and Loading the Model
